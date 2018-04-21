@@ -1,16 +1,17 @@
 
-title: Karna
-desctiption: Karna is a responsive jekyll theme which includes pinterest like pins.
-url: http://webjeda.com/
+title: Uncollected Pages
+description: tech. design. games. food. life. psycosis.
+url: https://blog.alokprateek.ml/
 permalink: ':title/'
 
 markdown: kramdown
-baseurl: "/karna"
-full-version: "http://webjeda.com/karna-full/"
+baseurl: ""
+
+kramdown:
+  input: GFM
 
 sass:
     style: compressed
-
   
 #optimization
 #compress.html
@@ -28,17 +29,24 @@ highlight: rouge
 
 
 # Tracker
-analytics: UA-83979019-1
+analytics: UA-85177250-1
 
 # Comments
-disqus-shortname: webjeda-demo
+disqus-shortname: oxyenyos
 
 # Contact form
 # Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
 api-token:   
 
 include: [_pages]
-version: 0.8
+version: 0.7.78
+
+# Output options (more information on Jekyll's site)
+timezone: "Asia/Kolkata"
+markdown: kramdown
+highlighter: rouge
+paginate: 8
+paginate_path: /page:num/
 
 plugins: 
     - jekyll-paginate
