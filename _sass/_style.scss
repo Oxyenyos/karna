@@ -220,7 +220,7 @@ header {
 .header-title {
     color: #555;
     font-size: 3em;
-    line-height: 0;
+    line-height: calc(90%);
     margin: 0;
     display: inline-block;
     letter-spacing: -1px;
