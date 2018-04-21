@@ -35,10 +35,11 @@ api-token:
 
 include: [_pages]
 version: 0.9
+paginate: 6
+paginate_path: "/karna/page:num/"
 
 # Output options (more information on Jekyll's site)
 timezone: "Asia/Kolkata"
-markdown: kramdown
 
 plugins: 
     - jekyll-paginate
