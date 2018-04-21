@@ -1,6 +1,27 @@
 ---
 layout: default
 ---
+<style>
+.pagination a, .pagination span {
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: #ffffff;
+    display: inline-block;
+  }
+
+.pagination a {    
+    &:hover {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+ }
+
+.pagination {
+    text-align: center;
+ }
+</style>
 <div id="container">
 <div id="grid" data-columns class="cols">
     
@@ -18,10 +39,9 @@ layout: default
    {% endfor %}
 
 </div>
-</div>
-<div>
+    <!-- pagination -->
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
+<div class="pagination"> 
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
   {% else %}
@@ -30,9 +50,9 @@ layout: default
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <em>{{ page }}</em>
+      <span class="webjeda">{{ page }}</span>
     {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      <a href="/">{{ page }}</a>
     {% else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
@@ -45,7 +65,7 @@ layout: default
   {% endif %}
 </div>
 {% endif %}
-    </div>
-
+    
+</div>
 
 <script src="{{site.baseurl}}/js/salvattore.min.js"></script>
