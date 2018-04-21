@@ -45,8 +45,6 @@ version: 0.7.78
 timezone: "Asia/Kolkata"
 markdown: kramdown
 highlighter: rouge
-paginate: 8
-paginate_path: /page:num/
 
 plugins: 
     - jekyll-paginate
