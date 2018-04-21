@@ -1,10 +1,10 @@
 
 title: Uncollected Pages
 description: tech. design. games. food. life. psycosis.
-url: https://blog.alokprateek.ml/
+url: https://alokprateek.ml/
 permalink: ':title/'
 
-baseurl: "/blog"
+baseurl: "/karna"
 markdown: kramdown
 highlight: rouge
 
