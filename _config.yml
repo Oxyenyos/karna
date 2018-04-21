@@ -4,10 +4,8 @@ description: tech. design. games. food. life. psycosis.
 url: https://blog.alokprateek.ml/
 permalink: ':title/'
 
-
 baseurl: "/blog"
 markdown: kramdown
-
 highlight: rouge
 
 sass:
@@ -24,8 +22,6 @@ compress_html:
   blanklines: false
   profile: false
   startings: []
-
-
 
 # Tracker
 analytics: UA-85177250-1
