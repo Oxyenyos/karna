@@ -4,11 +4,11 @@ description: tech. design. games. food. life. psycosis.
 url: https://blog.alokprateek.ml/
 permalink: ':title/'
 
-markdown: kramdown
-baseurl: ""
 
-kramdown:
-  input: GFM
+baseurl: ""
+markdown: kramdown
+
+highlight: rouge
 
 sass:
     style: compressed
@@ -25,7 +25,6 @@ compress_html:
   profile: false
   startings: []
 
-highlight: rouge
 
 
 # Tracker
@@ -39,12 +38,11 @@ disqus-shortname: oxyenyos
 api-token:   
 
 include: [_pages]
-version: 0.7.78
+version: 0.9
 
 # Output options (more information on Jekyll's site)
 timezone: "Asia/Kolkata"
 markdown: kramdown
-highlighter: rouge
 
 plugins: 
     - jekyll-paginate
