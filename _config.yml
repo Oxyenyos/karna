@@ -5,7 +5,7 @@ url: https://blog.alokprateek.ml/
 permalink: ':title/'
 
 
-baseurl: ""
+baseurl: "/blog"
 markdown: kramdown
 
 highlight: rouge
