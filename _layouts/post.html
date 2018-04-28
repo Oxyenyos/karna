@@ -4,7 +4,7 @@ layout: default
 
 <div class="page-container">
    {% if page.img %}
-    <img class="featured-img" src={{ "/images-hq/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+    <img class="featured-img" src={{ "/images-hq/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}" >
     {% endif %}
     <div class="content">
     <article>
@@ -12,6 +12,22 @@ layout: default
         {% if page.author %}
         <div class="meta"><span><i class="fa fa-calendar-o" aria-hidden="true"></i> {{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{page.author}}</span></div>
         {% endif %}
+        <span class="read-time" title="Estimated read time">
+          <svg id="i-clock" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" 
+          stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14" /><path d="M16 8 L16 16 20 20" /></svg>       
+
+          {% assign words = content | number_of_words %}
+          {% if words < 360 %}
+            1 min read.
+          {% else %}
+            {{ words | divided_by:180 }} mins read.
+          {% endif %}
+        </span>
+        <style>
+            svg#i-clock {vertical-align: middle;}
+        </style>
+        * Do not remove this line (it will not be displayed)
+        {:toc}
         {{page.content | markdownify}}
     </article>
             {% if page.categories %}
